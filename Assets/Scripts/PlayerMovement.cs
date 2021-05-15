@@ -94,6 +94,10 @@ public class PlayerMovement : MonoBehaviour
             jump = false;
         }
 
+        if (rb.position.y < (-3f))
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
 
     }
 }
