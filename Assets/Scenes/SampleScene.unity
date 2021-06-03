@@ -5018,6 +5018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTile: {fileID: 5114056656492055255, guid: 15a55ca47b41f1648ba3004d82e5f1c8, type: 3}
+  obstaclePrefab: {fileID: 5666687511847651552, guid: 97dbb5813ce66144f85e25c36dbcea13, type: 3}
   tileList: []
 --- !u!4 &293594589
 Transform:

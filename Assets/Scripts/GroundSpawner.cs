@@ -6,6 +6,7 @@ public class GroundSpawner : MonoBehaviour
 {
 
     [SerializeField] GameObject groundTile;
+    [SerializeField] GameObject obstaclePrefab;
     Vector3 nextSpawnPoint;
     public List<GameObject> tileList = new List<GameObject>();
 
