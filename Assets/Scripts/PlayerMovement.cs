@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float turningForce = 500f;
     public float jumpingForce = 200f;
+    public GroundSpawner groundSpawner;
 
     //private bool up = false;
     private bool left = false;
@@ -90,6 +91,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (jump)
         {
+            for (int i = 0; i < 7; i++)
+            {
+                groundSpawner.SpawnTile(false);
+            }
             rb.AddForce(0, jumpingForce * Time.deltaTime, 0, ForceMode.VelocityChange);
             jump = false;
         }

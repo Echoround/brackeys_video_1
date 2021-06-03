@@ -24,10 +24,11 @@ public class GameManager : MonoBehaviour
         GameHasEnded = true;
         Debug.Log("game over");
         Time.timeScale = 0;
-        yield return new WaitForSeconds(2);
         crashedText.enabled = true;
-
+        yield return new WaitForSecondsRealtime(2);
+        Time.timeScale = 1;
         Invoke("Restart", restart_delay);
+
 
     }
 
@@ -38,7 +39,8 @@ public class GameManager : MonoBehaviour
         {
 
             StartCoroutine(GameEndRoutine());
-   
+        
+
         }
 
        

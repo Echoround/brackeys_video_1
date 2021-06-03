@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Game_end_particles: {fileID: 1454259606}
   restart_delay: 1
+  crashedText: {fileID: 1044732209}
 --- !u!1 &271012885
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,6 +10493,7 @@ MonoBehaviour:
   forwardForce: 20
   turningForce: 150
   jumpingForce: 50
+  groundSpawner: {fileID: 293594588}
 --- !u!54 &1851711915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11007,6 +11009,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: 4a8d3f2930daefd4a95b5648fe9109a2, type: 3}
+    - target: {fileID: 1816410818859957789, guid: 7226fb828b5ce9843b4d623f0007d595, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0c48f923a721af3468d83c405e648cdd, type: 3}
     - target: {fileID: 1816410818859957789, guid: 7226fb828b5ce9843b4d623f0007d595, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 50
