@@ -5017,6 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTile: {fileID: 5114056656492055255, guid: 15a55ca47b41f1648ba3004d82e5f1c8, type: 3}
+  tileList: []
 --- !u!4 &293594589
 Transform:
   m_ObjectHideFlags: 0
@@ -10390,6 +10391,7 @@ GameObject:
   - component: {fileID: 1851711915}
   - component: {fileID: 1851711916}
   - component: {fileID: 1851711917}
+  - component: {fileID: 1851711918}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10406,7 +10408,7 @@ BoxCollider:
   m_GameObject: {fileID: 1851711909}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10618,6 +10620,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 1851711914}
   crashedText: {fileID: 1044732209}
+  groundSpawner: {fileID: 293594588}
+--- !u!136 &1851711918
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851711909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1915914032
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,7 +10760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 4afa99db4c55295439446d6b566ee6ff, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c48f923a721af3468d83c405e648cdd, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

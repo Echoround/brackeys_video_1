@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
 
     public PlayerMovement movement;
     public Text crashedText;
+    public GroundSpawner groundSpawner;
 
     void Start()
     {
@@ -15,8 +16,7 @@ public class PlayerCollision : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision collision)
-    {
-        
+    {        
         if (collision.collider.tag == "Obstacle")
         {
             Debug.Log(collision.collider.name);
@@ -28,7 +28,16 @@ public class PlayerCollision : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
-        
+        if (collision.collider.tag == "GroundTile")
+        {
+            Debug.Log(collision.collider.name);
+            // groundSpawner.RemoveOldTiles(collision.collider.GetComponent<GameObject>());
+            groundSpawner.RemoveOldTiles(collision.collider.GetComponent<Transform>().gameObject);
+            groundSpawner.SpawnTile(false);
+            
+        }
+
+
     }
 
 }

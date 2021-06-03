@@ -57,13 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\GroundTile.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\follow_object.cs" />
+    <Compile Include="Assets\Scripts\GroundSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\follow_player.cs" />
-    <Compile Include="Assets\Scripts\GroundSpawner.cs" />
-    <Compile Include="Assets\Scripts\GroundTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

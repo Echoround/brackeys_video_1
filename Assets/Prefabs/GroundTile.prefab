@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1596391179}
   m_Layer: 0
   m_Name: GroundTile
-  m_TagString: Untagged
+  m_TagString: GroundTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,9 +42,9 @@ BoxCollider:
   m_GameObject: {fileID: 5114056656492055255}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
+  m_Size: {x: 10, y: 0.1, z: 10}
   m_Center: {x: 0, y: 0, z: 5}
 --- !u!1 &5114056657188307522
 GameObject:
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 623600299507314470}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: GroundTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ MeshCollider:
   m_GameObject: {fileID: 5114056657656402829}
   m_Material: {fileID: 13400000, guid: 3d17d9a61050b984aabca865544bc24a, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
