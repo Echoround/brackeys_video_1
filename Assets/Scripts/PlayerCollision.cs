@@ -33,7 +33,7 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log(collision.collider.name);
             // groundSpawner.RemoveOldTiles(collision.collider.GetComponent<GameObject>());
             groundSpawner.RemoveOldTiles(collision.collider.GetComponent<Transform>().gameObject);
-            groundSpawner.SpawnTile(false);
+            groundSpawner.SpawnTile(true);
             
         }
 
