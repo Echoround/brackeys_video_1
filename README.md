@@ -2,4 +2,4 @@
 3D endless platformer game
 
 
-![Screenshot](Unity_Platformer.png)
+![Screenshot](docs/Unity_Platformer.png)
