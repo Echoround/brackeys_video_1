@@ -6,6 +6,7 @@ public class GroundTile : MonoBehaviour
     GroundSpawner groundSpawner;
     [SerializeField] GameObject coinPrefab;
     [SerializeField] GameObject obstaclePrefab;
+    public bool spawnItems;
 
     private void Start()
     {

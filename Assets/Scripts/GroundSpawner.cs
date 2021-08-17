@@ -9,6 +9,7 @@ public class GroundSpawner : MonoBehaviour
     [SerializeField] GameObject obstaclePrefab;
     Vector3 nextSpawnPoint;
     public List<GameObject> tileList = new List<GameObject>();
+    public bool spawnItems;
 
     public void SpawnTile(bool spawnItems)
     {
@@ -16,8 +17,11 @@ public class GroundSpawner : MonoBehaviour
         tileList.Add(temp);
         nextSpawnPoint = temp.transform.GetChild(1).transform.position;
 
+
+
         if (spawnItems)
         {
+            //temp.GetComponent<GroundTile>().SpawnObstacle();
             temp.GetComponent<GroundTile>().SpawnObstacle();
             // temp.GetComponent<GroundTile>().SpawnCoins();
         }

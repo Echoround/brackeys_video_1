@@ -8,6 +8,7 @@ public class PlayerCollision : MonoBehaviour
     public PlayerMovement movement;
     public Text crashedText;
     public GroundSpawner groundSpawner;
+    public bool spawnItems;
 
     void Start()
     {
